@@ -9,12 +9,12 @@
 }
 
 .mainnav {
-  background-color: silver;
+  background-color: #e0e0eb;
 }
 
 .mainnav ul.navbar-nav li a:hover,
 .mainnav ul.navbar-nav li a:focus {
-  background-color: white;
+  background-color: #EDEDFF;
 }
 
 .mainnav ul.navbar-nav li a {
@@ -27,7 +27,8 @@
 }
 
 .mainnav .navbar-brand:hover {
-  background-color: blue;
+  background-color: #EDEDFF;
+  transition: 0;
 }
 
 h1 {
@@ -42,42 +43,43 @@ h4 {
   color: white;
 }
 
-.section-one-pic {
-  padding-bottom: 50px;
-  background: url("https://images.unsplash.com/photo-1416672037352-53611b92e612?ixlib=rb-0.3.5&q") no-repeat center center fixed;
-  background-size: cover;
+.bg-section-one {
+  background: url("images/bg-building.jpg") no-repeat center center fixed;
   height: 900px;
 }
 
-.section-two-pic {
-  padding-bottom: 50px;
-  background: url("https://images.unsplash.com/photo-1471648460966-17b0e224869f?ixlib=rb-0.3.5&q") no-repeat center center fixed;
-  background-size: cover;
+.bg-section-two {
+  background: url("images/bg-slaterock.jpg") no-repeat center center fixed;
 }
 
-.section-three-pic {
-  padding-bottom: 50px;
-  background: url("https://images.unsplash.com/photo-1487452066049-a710f7296400?ixlib=rb-0.3.5&") no-repeat center center fixed;
-  background-size: cover;
+.bg-section-three {
+  background: url("images/bg-subwayhall.jpg") no-repeat center center fixed;
 }
 
-.section-four-pic {
-  padding-bottom: 50px;
-  background: url("https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?ixlib=rb-0.3.5&q=1") no-repeat center center fixed;
+.bg-section-four {
+  background: url("images/bg-lakefront.jpg") no-repeat center center fixed;
+  height: 700px;
+}
+
+.bg-background {
   background-size: cover;
-  height: 900px;
+  padding-bottom: 50px;
 }
 
 .section-one-content {
   margin-top: 10%;
-  border-bottom: 2px solid white;
+  border-bottom: 3px solid silver;
   font-family: Orbitron, Helvetica, sans-serif;
 }
 
 .section-two-content {
-  margin-top: 24%;
+  margin-top: 25%;
   margin-bottom: 5%;
   border-top: 2px solid white;
+  font-family: Lobster;
+  color: white;
+  font-size: 1.1em;
+  text-shadow: 2px 1px 2px #000;
 }
 
 .section-three-content {
@@ -85,6 +87,14 @@ h4 {
   margin-bottom: 5%;
   border-bottom: 2px solid white;
   font-family: Orbitron, Helvetica, sans-serif;
+}
+
+.section-four-content {
+  margin-top: 15%;
+  font-family: Permanent Marker;
+  font-size: 1em;
+  margin-left: 10%;
+  border-bottom: 2px solid silver;
 }
 
 .btn {
@@ -107,9 +117,10 @@ h4 {
 
 .col-md-4 .well {
   opacity: .8;
-  margin-Bottom: 15%;
   box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.3);
   background-color: silver;
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 .section-three-cardtitle {
@@ -155,36 +166,31 @@ h4 {
   font-family: Lobster;
 }
 
-.section-two-content p {
-  font-family: Lobster;
-  color: silver;
-  font-size: 1.5em;
-  text-shadow: 2px 1px 2px #000;
-}
-
-.section-two-photo {
-  margin-top: 35%;
-}
-
-.section-two-photo .img-circle {
-  border: 10px solid silver;
-}
-
-.section-four-content {
-  margin-top: 40%;
-  font-family: Permanent Marker;
-  font-size: 1em;
-  margin-left: 10%;
-}
-
-.section-four-buttons {
-  margin-left: 30%;
-}
-
 .btn-space {
-  padding: 50px;
+  padding: 2%;
 }
 
 .btn-group-vertical .btn {
   margin-bottom: 20%;
+}
+
+.section-four-buttons {
+  padding-left: 45%;
+  padding-top: 3%;
+}
+
+.section-two-content + .content-body {
+  color: white;
+  font-family: Lobster;
+  font-size: 1.5em;
+}
+
+.left-well {
+  margin-top: 30%;
+  opacity: .4;
+  background: silver;
+}
+
+.left-well .content-header {
+  background: black;
 }
