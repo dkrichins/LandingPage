@@ -181,8 +181,9 @@ h4 {
 
 .section-two-content + .content-body {
   color: white;
-  font-family: Lobster;
+  font-family: Patua One;
   font-size: 1.5em;
+  text-shadow: 2px 1px 2px #000;
 }
 
 .left-well {
@@ -193,4 +194,6 @@ h4 {
 
 .left-well .content-header {
   background: black;
+  font-family: Josefin Sans;
+  color: white;
 }
